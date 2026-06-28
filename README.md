@@ -52,3 +52,18 @@ Stay connected and follow the development of StackLearn.
 * ✈️ Telegram: https://t.me/stacklearnhq
 
 We welcome learners, builders, and contributors from around the world.
+
+
+
+
+⸻
+
+📂 Repository Structure
+
+stacklearn/
+├── assets/         # Logos, banners, and visual assets
+├── branding/       # Brand guidelines and identity
+├── docs/           # Documentation, roadmap, and vision
+├── whitepaper/     # Whitepaper drafts and releases
+├── LICENSE         # Open-source license
+└── README.md       # Project overview
