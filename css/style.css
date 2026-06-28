@@ -11,13 +11,9 @@
 --text:#ffffff;
 --muted:#cfd8dc;
 --border:#1f1f1f;
-
 --radius:14px;
-
 --section-padding:100px 40px;
-
 --transition:0.3s ease;
-
 }
 
 html{
@@ -97,6 +93,25 @@ font-size:20px;
 line-height:1.8;
 color:var(--muted);
 }
+
+.vision{
+padding:100px 40px;
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.vision h2{
+font-size:42px;
+margin-bottom:30px;
+}
+
+.vision p{
+font-size:20px;
+line-height:1.8;
+color:#cfd8dc;
+}
+
 .features{
 padding:100px 40px;
 text-align:center;
