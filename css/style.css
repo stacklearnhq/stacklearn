@@ -272,3 +272,11 @@ transition:.3s;
 }
 
 .community-links a:hover
+
+.footer{
+padding:40px 20px;
+text-align:center;
+border-top:1px solid #1f1f1f;
+color:#8a9aa5;
+font-size:14px;
+}
