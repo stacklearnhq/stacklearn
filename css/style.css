@@ -271,12 +271,15 @@ text-decoration:none;
 transition:.3s;
 }
 
-.community-links a:hover
+.community-links a:hover{
+    background:#00b7ff;
+    color:#000;
+}
 
 .footer{
-padding:40px 20px;
-text-align:center;
-border-top:1px solid #1f1f1f;
-color:#8a9aa5;
-font-size:14px;
+    padding:40px 20px;
+    text-align:center;
+    border-top:1px solid #1f1f1f;
+    color:#8a9aa5;
+    font-size:14px;
 }
