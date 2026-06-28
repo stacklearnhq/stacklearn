@@ -239,3 +239,36 @@ line-height:1.7;
     line-height:1.8;
 
 }
+.community{
+padding:100px 40px;
+text-align:center;
+}
+
+.community h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.community p{
+color:#cfd8dc;
+margin-bottom:40px;
+font-size:20px;
+}
+
+.community-links{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.community-links a{
+padding:15px 30px;
+border:1px solid #00b7ff;
+border-radius:12px;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.community-links a:hover
