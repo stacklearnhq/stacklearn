@@ -36,3 +36,19 @@ Whether you are just beginning your Web3 journey or expanding your technical kno
 * 🌐 Open documentation and knowledge sharing
 * 🚀 Participation in the Canton ecosystem
 * 🔗 Verifiable learning journey (future vision)
+
+
+
+
+⸻
+
+🌍 Community
+
+Stay connected and follow the development of StackLearn.
+
+* 🐙 GitHub: https://github.com/stacklearnhq
+* 🐦 X: https://x.com/stacklearnhq
+* 💬 Discord: https://discord.gg/9TkBNTGvR
+* ✈️ Telegram: https://t.me/stacklearnhq
+
+We welcome learners, builders, and contributors from around the world.
