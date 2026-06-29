@@ -170,16 +170,23 @@ body {
 }
 
 .hero::before{
+
     content:"";
     position:absolute;
-    width:520px;
-    height:520px;
+    width:620px;
+    height:620px;
     border-radius:50%;
-    background:rgba(0,183,255,.12);
-    filter:blur(120px);
+
+    background:
+        radial-gradient(circle,
+        rgba(0,183,255,.18),
+        transparent 70%);
+
+    filter:blur(110px);
     top:-180px;
     left:50%;
     transform:translateX(-50%);
+    animation:heroGlow 10s ease-in-out infinite alternate;
     z-index:0;
 
 }
@@ -597,6 +604,37 @@ font-size:14px;
     60% {
         transform: translateY(4px);
     }
+}
+
+@keyframes heroGlow{
+
+    0%{
+
+        transform:
+            translateX(-50%)
+            translateY(0)
+            scale(1);
+
+    }
+
+    50%{
+
+        transform:
+            translateX(-48%)
+            translateY(20px)
+            scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+            translateX(-52%)
+            translateY(-15px)
+            scale(.96);
+
+    }
+
 }
 
 /* =========================
