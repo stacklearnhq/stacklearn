@@ -74,3 +74,57 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();
+
+/* =========================
+   Statistics Counter
+========================= */
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+
+        const target = Number(counter.dataset.target);
+
+        const suffix = counter.dataset.suffix || "";
+
+        let current = 0;
+
+        const increment = Math.max(1, Math.ceil(target / 60));
+
+        const updateCounter = () => {
+
+            current += increment;
+
+            if(current >= target){
+
+                counter.textContent = target + suffix;
+
+                return;
+
+            }
+
+            counter.textContent = current + suffix;
+
+            requestAnimationFrame(updateCounter);
+
+        };
+
+        requestAnimationFrame(updateCounter);
+
+        observer.unobserve(counter);
+
+    });
+
+});
+
+counters.forEach(counter => {
+
+    counterObserver.observe(counter);
+
+});
