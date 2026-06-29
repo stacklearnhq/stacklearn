@@ -251,7 +251,11 @@ body {
 
     width:180px;
     margin-bottom:30px;
-    transition:var(--transition);
+    transition:
+        transform .25s ease,
+        filter .3s ease;
+
+    will-change:transform;
 
 }
 
