@@ -11,3 +11,14 @@ if (menuToggle && navMenu) {
         menuToggle.textContent = isExpanded ? "✕" : "☰";
     });
 }
+
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+    });
+});
