@@ -4,16 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
---bg:#090909;
---surface:#111111;
---primary:#00b7ff;
---text:#ffffff;
---muted:#cfd8dc;
---border:#1f1f1f;
---radius:14px;
---section-padding:100px 40px;
---transition:0.3s ease;
+
+:root {
+    /* Colors */
+    --bg: #090909;
+    --surface: #111111;
+    --primary: #00b7ff;
+
+    --text: #ffffff;
+    --muted: #cfd8dc;
+    --text-muted: #8a9aa5;
+
+    --border: #1f1f1f;
+    --dark: #000000;
+
+    /* Radius */
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+
+    /* Layout */
+    --section-padding: 100px 40px;
+
+    /* Animation */
+    --transition: 0.3s ease;
 }
 
 html{
@@ -21,10 +35,11 @@ html{
 }
 
 body {
-background:var(--bg);
-color:var(--text);
-font-family: 'Inter', sans-serif;
-min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
 .hero {
@@ -64,20 +79,20 @@ justify-content:center;
 .buttons a{
 text-decoration:none;
 color:var(--text);
-border:1px solid #00b7ff;
+border:1px solid var(--primary);
 padding:14px 28px;
-border-radius:10px;
-transition:.3s;
+border-radius: var(--radius-sm);
+transition: var(--transition);
 }
 
 .buttons a:hover{
 background:var(--primary);
-color:#000;
+color: var(--dark);
 box-shadow:0 0 20px rgba(0,183,255,.35);
 }
 
 .about{
-padding:100px 40px;
+padding: var(--section-padding);
 max-width:900px;
 margin:auto;
 text-align:center;
@@ -95,7 +110,7 @@ color:var(--muted);
 }
 
 .vision{
-padding:100px 40px;
+padding: var(--section-padding);
 max-width:900px;
 margin:auto;
 text-align:center;
@@ -109,11 +124,11 @@ margin-bottom:30px;
 .vision p{
 font-size:20px;
 line-height:1.8;
-color:#cfd8dc;
+color:var(--muted);
 }
 
 .features{
-padding:100px 40px;
+padding: var(--section-padding);
 text-align:center;
 }
 
@@ -132,10 +147,10 @@ flex-wrap:wrap;
 .feature-card{
 width:280px;
 background:var(--surface);
-border:1px solid #1d3f5f;
-border-radius:16px;
+border:1px solid var(--border);
+border-radius: var(--radius-sm);
 padding:30px;
-transition:.3s;
+transition: var(--transition);
 }
 
 .feature-card:hover{
@@ -155,7 +170,7 @@ line-height:1.7;
 }
 
 .roadmap{
-padding:100px 40px;
+padding: var(--section-padding);
 text-align:center;
 }
 
@@ -173,11 +188,11 @@ margin:auto;
 }
 
 .phase{
-background:#101010;
-border:1px solid #1f1f1f;
-border-radius:18px;
+background:var(--surface);
+border:1px solid var(--border);
+border-radius: var(--radius-sm);
 padding:35px;
-transition:.35s;
+transition: var(--transition);
 }
 
 .phase:hover{
@@ -187,7 +202,7 @@ box-shadow:0 0 25px rgba(0,183,255,.18);
 }
 
 .phase span{
-color:#00b7ff;
+color:var(--primary);
 font-size:14px;
 text-transform:uppercase;
 letter-spacing:2px;
@@ -203,7 +218,7 @@ color:var(--muted);
 line-height:1.8;
 }
 .community{
-padding:100px 40px;
+padding: var(--section-padding);
 text-align:center;
 }
 
@@ -227,23 +242,23 @@ gap:20px;
 
 .community-links a{
 padding:15px 30px;
-border:1px solid #00b7ff;
-border-radius:12px;
+border:1px solid var(--primary);
+border-radius: var(--radius-sm);
 color:var(--text);
 text-decoration:none;
-transition:.3s;
+transition: var(--transition);
 }
 
 .community-links a:hover{
 background:var(--primary);
-color:#000;
+color: var(--dark);
 box-shadow:0 0 20px rgba(0,183,255,.35);
 }
 
 .footer{
 padding:40px 20px;
 text-align:center;
-border-top:1px solid #1f1f1f;
-color:#8a9aa5;
+border-top:1px solid var(--border);
+color:var(--text-muted);
 font-size:14px;
 }
