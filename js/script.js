@@ -22,3 +22,33 @@ navLinks.forEach((link) => {
         menuToggle.textContent = "☰";
     });
 });
+
+const sections = document.querySelectorAll("main section");
+const navItems = document.querySelectorAll(".nav-menu a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach((section) => {
+
+        const sectionTop = section.offsetTop - 140;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navItems.forEach((item) => {
+
+        item.classList.remove("active");
+
+        if (item.getAttribute("href") === `#${current}`) {
+            item.classList.add("active");
+        }
+
+    });
+
+});
