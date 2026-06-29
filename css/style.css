@@ -493,6 +493,23 @@ color:var(--text-muted);
 font-size:14px;
 }
 
+/* =========================
+   Reveal Animation
+========================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
 @keyframes bounce {
 
     0%,
