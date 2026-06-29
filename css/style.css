@@ -121,6 +121,26 @@ body {
     width: 100%;
 }
 
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: var(--text);
+
+    font-size: 30px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.menu-toggle:hover {
+    color: var(--primary);
+}
+
 .nav-github {
     display: inline-flex;
     align-items: center;
@@ -129,7 +149,7 @@ body {
     padding: 10px 22px;
 
     border: 1px solid var(--primary);
-    border-radius: var(--radius);
+    border-radius: var(--radius-sm);
 
     color: var(--text);
     text-decoration: none;
@@ -482,4 +502,32 @@ font-size:14px;
     60% {
         transform: translateY(4px);
     }
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width:768px){
+
+    .nav-container{
+        padding:16px 20px;
+    }
+
+    .nav-menu{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-github{
+        display:none;
+    }
+
+    .hero{
+        padding:100px 24px 60px;
+    }
+
 }
