@@ -185,7 +185,9 @@ body {
     filter:blur(110px);
     top:-180px;
     left:50%;
-    transform:translateX(-50%);
+    transform:
+    translateX(calc(-50% + var(--hero-x, 0px)))
+    translateY(var(--hero-y, 0px));
     animation:heroGlow 10s ease-in-out infinite alternate;
     z-index:0;
 
