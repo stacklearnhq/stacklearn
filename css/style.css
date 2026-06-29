@@ -56,15 +56,17 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.nav-container{
+    max-width:1200px;
+    margin:0 auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 
-    padding: 18px 40px;
+    gap:40px;
+
+    padding:18px 40px;
 }
 
 .nav-logo {
@@ -74,21 +76,49 @@ body {
     font-weight: 700;
 }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 32px;
+.nav-menu{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    list-style:none;
+    gap:32px;
 }
 
-.nav-menu a {
+.nav-menu a{
+    position: relative;
+
     color: var(--muted);
     text-decoration: none;
     font-weight: 500;
+    font-size: 15px;
+
     transition: var(--transition);
 }
 
 .nav-menu a:hover {
     color: var(--primary);
+}
+
+.nav-menu a::after{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: var(--transition);
+}
+
+.nav-menu a:hover::after{
+    width: 100%;
 }
 
 .nav-github {
