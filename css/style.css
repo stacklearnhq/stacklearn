@@ -81,6 +81,19 @@ margin-bottom:20px;
     color: var(--muted);
 }
 
+.scroll-indicator {
+    margin-top: 60px;
+    color: var(--primary);
+    font-size: 28px;
+    text-decoration: none;
+    transition: var(--transition);
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator:hover {
+    color: var(--text);
+}
+
 .buttons{
 display:flex;
 gap:20px;
@@ -88,13 +101,24 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-.buttons a{
-text-decoration:none;
-color:var(--text);
-border:1px solid var(--primary);
-padding:14px 28px;
-border-radius: var(--radius-sm);
-transition: var(--transition);
+.buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 140px;
+
+    text-decoration: none;
+    color: var(--text);
+
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-sm);
+
+    padding: 14px 28px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
 }
 
 .buttons a:hover{
@@ -253,12 +277,23 @@ gap:20px;
 }
 
 .community-links a{
-padding:15px 30px;
-border:1px solid var(--primary);
-border-radius: var(--radius-sm);
-color:var(--text);
-text-decoration:none;
-transition: var(--transition);
+display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 140px;
+
+    text-decoration: none;
+    color: var(--text);
+
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-sm);
+
+    padding: 14px 28px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
 }
 
 .community-links a:hover{
@@ -273,4 +308,23 @@ text-align:center;
 border-top:1px solid var(--border);
 color:var(--text-muted);
 font-size:14px;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(8px);
+    }
+
+    60% {
+        transform: translateY(4px);
+    }
 }
