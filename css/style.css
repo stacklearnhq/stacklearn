@@ -221,6 +221,7 @@ body {
     transform:translateY(-8px);
     border-color:var(--primary);
     box-shadow:0 0 25px rgba(0,183,255,.18);
+    filter:brightness(1.04);
 
 }
 
@@ -397,6 +398,7 @@ transition: var(--transition);
 transform: translateY(-8px);
 border-color: var(--primary);
 box-shadow: 0 0 25px rgba(0, 183, 255, 0.18);
+filter:brightness(1.04);
 }
 
 .value-card h3 {
@@ -441,6 +443,7 @@ transition: var(--transition);
 transform:translateY(-8px);
 border-color:var(--primary);
 box-shadow:0 0 25px rgba(0,183,255,.18);
+filter:brightness(1.04);
 }
 
 .feature-card h3{
@@ -484,6 +487,7 @@ transition: var(--transition);
 border-color:var(--primary);
 transform:translateY(-10px);
 box-shadow:0 0 25px rgba(0,183,255,.18);
+filter:brightness(1.04);
 }
 
 .phase span{
@@ -593,6 +597,51 @@ font-size:14px;
     60% {
         transform: translateY(4px);
     }
+}
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--bg);
+}
+
+::-webkit-scrollbar-thumb{
+    background:rgba(0,183,255,.35);
+    border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--primary);
+}
+
+/* =========================
+   Text Selection
+========================= */
+
+::selection{
+    background:rgba(0,183,255,.28);
+    color:var(--text);
+}
+
+/* =========================
+   Focus
+========================= */
+
+a:focus-visible,
+button:focus-visible{
+
+    outline:2px solid var(--primary);
+
+    outline-offset:4px;
+
+    border-radius:var(--radius-sm);
+
 }
 
 /* =========================
