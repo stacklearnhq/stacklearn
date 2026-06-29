@@ -1,16 +1,13 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
-menuToggle.addEventListener("click", () => {
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
 
-    navMenu.classList.toggle("active");
+        const isExpanded = navMenu.classList.contains("active");
 
-    const expanded =
-        menuToggle.getAttribute("aria-expanded") === "true";
-
-    menuToggle.setAttribute(
-        "aria-expanded",
-        !expanded
-    );
-
-});
+        menuToggle.setAttribute("aria-expanded", isExpanded);
+        menuToggle.textContent = isExpanded ? "✕" : "☰";
+    });
+}
