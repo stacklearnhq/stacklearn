@@ -1,69 +1,148 @@
+# StackLearn
+
 <p align="center">
-  <img src="assets/stacklearn-logo.png" alt="StackLearn Logo" width="220"/>
-</p>
-<h1 align="center">StackLearn</h1>
-<p align="center">
-Learn • Build • Earn in Web3
-</p>
-<p align="center">
-A community-driven platform dedicated to Web3 education, practical learning, and verifiable credentials.
+  <img src="assets/stacklearn-logo.webp" alt="StackLearn Logo" width="160">
 </p>
 
+<p align="center">
+<b>Learn • Build • Earn</b><br>
+Community-driven Web3 education platform focused on practical learning, collaboration, and open knowledge.
+</p>
 
+<p align="center">
+<a href="https://stacklearnhq.github.io/stacklearn/">🌐 Website</a> •
+<a href="https://github.com/stacklearnhq/stacklearn">GitHub</a> •
+<a href="https://x.com/stacklearnhq">X</a> •
+<a href="https://discord.gg/9TkBNTGvR">Discord</a> •
+<a href="https://t.me/stacklearnhq">Telegram</a>
+</p>
 
+---
 
-⸻
+# 📖 About
 
-📖 About StackLearn
+StackLearn is an open community initiative that makes Web3 education practical, accessible, and collaborative.
 
-StackLearn is a community-driven Web3 education initiative focused on helping learners develop practical blockchain knowledge and real-world skills.
+Instead of focusing only on theory, StackLearn encourages people to learn by building real projects, contributing to open source, and growing together with the community.
 
-Our mission is to simplify access to Web3 education through open resources, collaborative learning, and transparent documentation. We believe meaningful learning comes from building, experimenting, and contributing to open ecosystems.
+---
 
-Whether you are just beginning your Web3 journey or expanding your technical knowledge, StackLearn aims to provide a welcoming environment where everyone can learn, build, and grow together.
+# ✨ Features
 
+* 📚 Practical Web3 learning
+* 🛠 Project-based education
+* 🤝 Community collaboration
+* 🌍 Open knowledge sharing
+* 📱 Fully responsive design
+* ⚡ Fast loading experience
+* 🔍 SEO optimized
+* ♿ Accessibility focused
 
+---
 
+# 🚀 Live Website
 
+https://stacklearnhq.github.io/stacklearn/
 
-⸻
+---
 
-✨ Features
+# 📊 Lighthouse Score
 
-* 📚 Practical Web3 learning resources
-* 🤝 Community-driven collaboration
-* 🛠️ Hands-on skill development
-* 🌐 Open documentation and knowledge sharing
-* 🚀 Participation in the Canton ecosystem
-* 🔗 Verifiable learning journey (future vision)
+| Category         |   Score |
+| ---------------- | ------: |
+| 🚀 Performance   |  **98** |
+| ♿ Accessibility  | **100** |
+| ✅ Best Practices | **100** |
+| 🔍 SEO           | **100** |
 
+---
 
+# 🛠 Tech Stack
 
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* GitHub Pages
 
-⸻
+---
 
-🌍 Community
+# 📂 Project Structure
 
-Stay connected and follow the development of StackLearn.
-
-* 🐙 GitHub: https://github.com/stacklearnhq
-* 🐦 X: https://x.com/stacklearnhq
-* 💬 Discord: https://discord.gg/9TkBNTGvR
-* ✈️ Telegram: https://t.me/stacklearnhq
-
-We welcome learners, builders, and contributors from around the world.
-
-
-
-
-⸻
-
-📂 Repository Structure
-
+```
 stacklearn/
-├── assets/         # Logos, banners, and visual assets
-├── branding/       # Brand guidelines and identity
-├── docs/           # Documentation, roadmap, and vision
-├── whitepaper/     # Whitepaper drafts and releases
-├── LICENSE         # Open-source license
-└── README.md       # Project overview
+│
+├── assets/
+│   ├── stacklearn-logo.webp
+│   ├── og-banner.webp
+│   ├── favicon-32x32.png
+│   ├── favicon-16x16.png
+│   ├── apple-touch-icon.png
+│   ├── site.webmanifest
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── index.html
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
+
+---
+
+# 🎯 Core Values
+
+* Learn by Building
+* Open Knowledge
+* Community First
+
+---
+
+# 🛣 Roadmap
+
+* ✅ Responsive Website
+* ✅ Mobile Navigation
+* ✅ Hero Animation
+* ✅ Statistics Section
+* ✅ Scroll Reveal Animation
+* ✅ SEO Optimization
+* ✅ Open Graph Support
+* ✅ Structured Data
+* ✅ Lighthouse Optimization
+
+Future plans:
+
+* Learning Resources
+* Community Programs
+* Practical Guides
+* Ecosystem Partnerships
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you would like to improve StackLearn:
+
+1. Fork this repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project will be released under the MIT License.
+
+---
+
+# ❤️ Author
+
+**Jenal Aripin**
+
+Built with passion for education, open source, and the Web3 community.
